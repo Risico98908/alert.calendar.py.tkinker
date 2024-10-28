@@ -1,0 +1,15 @@
+[Unit]
+Description=Notify Service to Display Alerts
+After=network.target
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/python3 /0.myfiles/notify.02.py
+Restart=always
+RestartSec=60
+TimeoutStartSec=infinity
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
