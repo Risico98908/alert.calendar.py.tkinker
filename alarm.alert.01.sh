@@ -1,3 +1,4 @@
+#ignore this file
 # Copy each service file to the systemd directory
 sudo cp /0.myfiles/notify.02.service /etc/systemd/system/
 sudo cp /0.myfiles/notify.04.service /etc/systemd/system/
